@@ -1,0 +1,1 @@
+function a(){return document.write("\x3cp\x3eHello, Optimized ClojureScript Compiler!\x3c/p\x3e")}var b=["hello_compiler","hello","main"],c=this;b[0]in c||!c.execScript||c.execScript("var "+b[0]);for(var d;b.length&&(d=b.shift());){var e;if(e=!b.length)e=void 0!==a;e?c[d]=a:c=c[d]?c[d]:c[d]={}};
