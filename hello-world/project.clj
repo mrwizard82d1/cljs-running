@@ -6,4 +6,10 @@
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/clojurescript "0.0-2173"]]
   :plugins [[lein-cljsbuild "1.0.2"]]
-  :cljsbuild {:builds []})
+  :source-paths ["src/clj"]
+  :cljsbuild {:builds
+              [{:source-paths ["src/cljs"],
+                :compiler
+                {:pretty-print true,
+                 :output-to "resources/public/hello.js",
+                 :optimizations :whitespace}}]})
